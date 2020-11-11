@@ -65,6 +65,7 @@ class WC_Shortcodes {
 			'after'  => null,
 		)
 	) {
+		$wrapper = apply_filters( 'woocommerce_shortcode_wrapper', $wrapper );
 		ob_start();
 
 		// @codingStandardsIgnoreStart
